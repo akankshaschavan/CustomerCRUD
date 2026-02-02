@@ -47,7 +47,7 @@ public class CustomerController {
 		cs.addAll(list);
 	}
 	
-	@GetMapping("display")
+	@GetMapping("/display")
 	public List<Customer> display(){
 		return cs.display();
 	}
