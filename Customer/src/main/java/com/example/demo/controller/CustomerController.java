@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.Customer;
 import com.example.demo.service.CustomerService;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 
@@ -26,6 +28,13 @@ public class CustomerController {
 	@Autowired
 	private CustomerService cs;
 	
+	
+	@GetMapping("/")
+	public String getMethodName() {
+		return "I am Akanksha";
+	}
+	
+		
 	@PostMapping("add")
 	public void add(@RequestBody Customer c) {
 		
