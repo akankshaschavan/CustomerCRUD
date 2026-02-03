@@ -35,7 +35,7 @@ public class CustomerController {
 	}
 	
 		
-	@PostMapping("add")
+	@PostMapping("/add")
 	public void add(@RequestBody Customer c) {
 		
 		cs.add(c);
@@ -127,10 +127,6 @@ public class CustomerController {
 	    return ResponseEntity.ok(updated);
 	}
 
-	
-	
-	
-	
 	
 	
 	
